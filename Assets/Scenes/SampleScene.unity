@@ -672,11 +672,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
       propertyPath: ySpeed
-      value: 10
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: clampedValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: clampedXValue
+      value: 19.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: clampedYValue
+      value: 10.8
       objectReference: {fileID: 0}
     - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
       propertyPath: movement.m_Name
       value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: rollControlFactor
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: yawRotationFactor
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: pitchControlFactor
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
+      propertyPath: pitchPositionValue
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 497227392785108962, guid: b6dc901610a66a34d8622d35f8a4bdaa, type: 3}
       propertyPath: movement.m_SingletonActionBindings.Array.size

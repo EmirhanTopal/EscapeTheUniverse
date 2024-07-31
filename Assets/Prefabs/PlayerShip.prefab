@@ -152,6 +152,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f5f94984497fc43befe1273e979e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c632c46c-c37b-4dc1-addd-76bae99d64e1
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  xSpeed: 0
+  ySpeed: 0
+  clampedXValue: 0
+  clampedYValue: 0
 --- !u!1 &909766158753067212
 GameObject:
   m_ObjectHideFlags: 0
