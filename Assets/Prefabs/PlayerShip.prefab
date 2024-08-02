@@ -153,18 +153,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement:
-    m_Name: 
+    m_Name: Movement
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: c632c46c-c37b-4dc1-addd-76bae99d64e1
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: Movement
+      m_Id: 4a140a13-cb90-44b9-a7e7-15a52211f469
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: c8e171b6-0757-4b48-8b38-c7a2760139bc
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 8a28cff7-c136-47bd-9850-df255c011757
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 9b70951b-71ad-43a3-87a2-9767efcf717d
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: e17f6c30-1174-44b1-9c02-1aa0bcf512d1
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
     m_Flags: 0
-  xSpeed: 0
-  ySpeed: 0
-  clampedXValue: 0
-  clampedYValue: 0
+  xSpeed: 30
+  ySpeed: 10
+  clampedXValue: 10
+  clampedYValue: 7
+  pitchPositionValue: -2
+  pitchControlFactor: -15
+  yawPositionFactor: 2
+  rollControlFactor: -20
 --- !u!1 &909766158753067212
 GameObject:
   m_ObjectHideFlags: 0
