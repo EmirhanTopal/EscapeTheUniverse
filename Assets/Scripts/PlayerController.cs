@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rollControlFactor;
     
     [Header("Laser features")]
-    [SerializeField] private GameObject[] lasers;
+    [SerializeField] public GameObject[] lasers;
      
     // private void OnEnable()
     // {
