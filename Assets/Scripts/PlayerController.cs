@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         ControlLaser();
     }
 
-    void RotationSpaceShip()
+    public void RotationSpaceShip()
     {
         float pitch = transform.localPosition.y * pitchPositionValue + _verticalThroughY * pitchControlFactor; // uçak aşağı yönde giderken uçağın burun aşağı bakar. x ROTASYON değeri bu duruma gönde değişir - x ekseni etrafında dönmek - (-) değer olacak
         float yaw = transform.localPosition.x * yawPositionFactor;
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(roll);
     }
     
-    private void MovementSpaceShip()
+    public void MovementSpaceShip()
     {
         //LocalPosition bir nesnenin kendi parent'ına göre konumunu ifade eder.
         
@@ -84,6 +84,7 @@ public class PlayerController : MonoBehaviour
         
         //transform.localPosition = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);  *** yanlış *** normal pozisyon
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+        Debug.Log(_verticalThroughY);
     }
 
     void ControlLaser()
@@ -101,7 +102,6 @@ public class PlayerController : MonoBehaviour
 
     void SetActiveLasers(bool isFireActive)
     {
-        
         foreach (var laser in lasers)
         {
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
