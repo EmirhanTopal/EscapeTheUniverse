@@ -15,12 +15,12 @@ public class ParticleManager : MonoBehaviour
     {
         OnParticle -= PlayParticle;
     }
-
-    public void PlayParticle(ParticleSystem particleSystem)
+    // logic hatırlaması yapılacak.
+    void PlayParticle(ParticleSystem particleSystem2)
     {
-        if (particleSystem != null)
+        if (particleSystem2 != null)
         {
-            particleSystem.Play();
+            particleSystem2.Play();
         }
     }
 

@@ -14,10 +14,14 @@ public class CollisionHandler : MonoBehaviour
         {
             Debug.Log(collision.gameObject.name + " collided");
             GetComponent<PlayerController>().enabled = false;
+            
             ParticleManager.TriggerPlayParticle(crashParticle);
             particleManager.StopParticle();
+            
             GetComponent<MeshRenderer>().enabled = false;
+            
             GetComponent<Collider>().enabled = false;
+            
             StartCoroutine(TimeHandler());
         }
     }
@@ -28,10 +32,14 @@ public class CollisionHandler : MonoBehaviour
         {
             Debug.Log(other.gameObject.name + " triggered");
             GetComponent<PlayerController>().enabled = false;
+            
             ParticleManager.TriggerPlayParticle(crashParticle);
             particleManager.StopParticle();
+            
             GetComponent<MeshRenderer>().enabled = false;
+            
             GetComponent<Collider>().enabled = false;
+            
             StartCoroutine(TimeHandler());
         }
     }
