@@ -6,10 +6,11 @@ public class SelfDestruct : MonoBehaviour
 {
     public void Update()
     {
-        if (transform.GetComponentInChildren<ParticleSystem>())
+        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
+
+        foreach (ParticleSystem ps in particleSystems)
         {
-            GameObject obj = transform.GetComponentInChildren<ParticleSystem>().gameObject;
-            Destroy(obj, 3f);
+            Destroy(ps.gameObject, 1f);
         }
     }
 }

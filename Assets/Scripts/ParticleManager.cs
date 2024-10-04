@@ -15,7 +15,7 @@ public class ParticleManager : MonoBehaviour
     {
         OnParticle -= PlayParticle;
     }
-    // logic hatırlaması yapılacak.
+    // logic hatırlaması yapılacak. action event
     void PlayParticle(ParticleSystem particleSystem2)
     {
         if (particleSystem2 != null)
