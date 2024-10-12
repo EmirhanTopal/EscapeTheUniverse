@@ -73,6 +73,10 @@ PrefabInstance:
       propertyPath: score
       value: 154
       objectReference: {fileID: 0}
+    - target: {fileID: 3010993855856987963, guid: 9b006e792d8e0b946b68e2496948c0de, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3931790250409487710, guid: 9b006e792d8e0b946b68e2496948c0de, type: 3}
       propertyPath: m_Name
       value: Jet1

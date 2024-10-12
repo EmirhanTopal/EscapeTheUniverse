@@ -61,7 +61,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticle: {fileID: 2161114665539202569, guid: ac45de757753eb6449d0fc1fefad8633, type: 3}
   hitParticle: {fileID: 2161114665539202569, guid: c18c97c49ac359249a66c8f4700ea567, type: 3}
-  parent: {fileID: 0}
+  score: 0
+  expEnemySfx: {fileID: 8300000, guid: 84387dd31d34ef049b3e4134b77b9397, type: 3}
   enemyHealth: 80
 --- !u!1001 &1834174604447563073
 PrefabInstance:
